@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <title>APPORG Registrations</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.css">
+    <!-- Portfolio CSS -->
+    <link href="css/portfolio.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        .btn-xl {
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+            border-radius: 10px;
+            width: 100%;
+            padding: 10% 0;
+            background: rgb(0, 0, 0);
+        }
+
+        .hovereffect {
+            width: 100%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+        }
+
+        .navbar {
+            min-height: 40px;
+        }
+
+        .navbar-default {
+            background-color: rgb(61, 89, 145);
+            border-color: rgb(61, 89, 145);
+        }
+
+        .navbar-brand {
+            color: white
+        }
+
+        .hovereffect .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            background-color: rgba(75,75,75,0.7);
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .hovereffect:hover .overlay {
+            background-color: rgba(61, 89, 145,0.6);
+        }
+
+        .hovereffect img {
+            display: block;
+            position: relative;
+        }
+
+        .hovereffect h2 {
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            font-size: 17px;
+            padding: 10px;
+            background: rgba(61, 89, 145,0.6);
+            -webkit-transform: translateY(45px);
+            -ms-transform: translateY(45px);
+            transform: translateY(45px);
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .hovereffect:hover h2 {
+            -webkit-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+
+        .hovereffect a.info {
+            display: inline-block;
+            text-decoration: none;
+            padding: 7px 14px;
+            text-transform: uppercase;
+            color: #fff;
+            border: 1px solid #fff;
+            background-color: transparent;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            font-weight: normal;
+            margin: -52px 0 0 0;
+            padding: 62px 100px;
+        }
+
+        .hovereffect:hover a.info {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .hovereffect a.info:hover {
+            box-shadow: 0 0 5px #fff;
+        }
+
+        .google-search {
+            padding: 20px 10px;
+        }
+
+            .google-search:focus {
+                box-shadow: silver 0 2px 10px;
+                border-color: silver;
+            }
+
+        .google-form .btn-group {
+            padding: 20px 0;
+        }
+
+        .btn-group > .btn {
+            border-radius: 0;
+            margin: 0 40px;
+         
+        }
+
+        .btn {
+            background-color: rgb(61, 89, 145);
+            font-weight: 500;
+            color: #ffffff;
+
+            width : 180px 
+        }
+
+        .pb-filemng-template {
+            margin-top: 40px;
+            font-family: 'Sansita', sans-serif;
+        }
+
+        .pb-filemng-navbar {
+            margin-bottom: 0;
+        }
+
+        .treeview-toggle-btn {
+            margin-left: 15px;
+        }
+
+        Care
+        .pb-filemng-template-btn {
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            color: gray;
+            padding: 0px 13px 0px 13px;
+        }
+
+        .pb-filemng-active {
+            border-bottom: 2px solid #6d97db;
+            color: #5f6977;
+        }
+
+        .pb-filemng-template-btn:hover {
+            color: blue;
+        }
+
+        .pb-filemng-body-folders > img:hover {
+            cursor: pointer;
+        }
+
+        .btn-align {
+            margin-top: 7px;
+        }
+
+        .pb-filemng-template-treeview {
+            border-right: 1px solid gray;
+        }
+
+        .pb-filemng-folder {
+            color: orange;
+            padding-bottom: 3px;
+        }
+
+        .pb-filemng-paragraphs {
+            margin-top: -20px;
+            text-align: center;
+        }
+
+        .img-responsive {
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 767px) {
+
+            .pb-filemng-template-treeview {
+                border-right: none;
+            }
+
+            #options {
+                text-align: center;
+            }
+
+                #options > li {
+                    display: inline-block;
+                }
+
+            #pb-filemng-navigation > ul {
+                text-align: center;
+            }
+
+                #pb-filemng-navigation > ul > li {
+                    display: inline-block;
+                }
+        }
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+            position: relative;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                /* Change the color of links on hover */
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                /* Add a color to the active/current link */
+                .topnav a.active {
+                    background-color: #04AA6D;
+                    color: white;
+                }
+
+        /* Centered section inside the top navigation */
+        .topnav-centered a {
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Right-aligned section inside the top navigation */
+        .topnav-right {
+            float: right;
+        }
+
+        /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+        @media screen and (max-width: 600px) {
+            .topnav a, .topnav-right {
+                float: none;
+                display: block;
+            }
+
+            .topnav-centered a {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+            }
+        }
+    </style>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!--<div class="navbar-header">
+        <a class="navbar-brand" href="AD.html">AppDelta</a>
+    </div>-->
+
+
+            <form class="navbar-form navbar-left">
+                <a href="#home" class="btn btn-default btn-outline-info">Trainee/Student</a>
+            </form>
+
+            <form class="navbar-form navbar-left">
+                <a href="#home" class="btn btn-default btn-outline-info">Corporate/Company</a>
+            </form>
+
+            <form class="navbar-form navbar-left">
+                <a href="#home" class="btn btn-default btn-outline-info">College/School</a>
+            </form>
+
+            <form class="navbar-form navbar-right">
+                <a href="#home" class="btn btn-default btn-outline-info">Consultancy/Institute</a>
+            </form>
+
+            <form class="navbar-form navbar-right">
+
+                <a href="ADBlack.html" class="btn btn-default btn-outline-info">Subscriptions</a>
+            </form>
+
+            <form class="topnav-centered">
+
+                <a href="ADMobile.html" class="btn btn-default btn-outline-info">Trainer</a>
+            </form>
+
+
+            <!--<form class="navbar-form navbar-left">
+
+        <a href="../index.html" class="btn btn-default btn-outline-info">Back</a>
+    </form>-->
+
+
+
+
+        </div>
+    </nav>
+
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeO9gzaKlnhKsOY_5C4fy_kZLYKER9WxyOoeyYA3BCOtjKZxA/viewform?embedded=true" width="640" height="1305" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        
+
+        <!-- End Left contact -->
+    </div>
+
+
+
+</body>
+</html>

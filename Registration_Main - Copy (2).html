@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html>
+<title>APPORG Registration or Expression of Interest</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+            .overlay a:hover, .overlay a:focus {
+                color: #f1f1f1;
+            }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #04AA6D;
+                    color: white;
+                }
+
+            .topnav .icon {
+                display: none;
+            }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #04AA6D;
+                    color: white;
+                }
+
+            .topnav .icon {
+                display: none;
+            }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#Trainee').click(function () {
+                if (!$('#iframe').length) {
+                    $('#iframeHolder').html('<iframe id="iframe1" src="TraineeReg.html" width="100%" height="1400px"></iframe>');
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+        $(function () {
+            $('#HomeMenu').click(function () {
+                if (!$('#iframe').length) {
+                    $('#iframeHolder').html('<iframe id="iframe2" src="/arsha/index.html" width="100%" height="1400px"></iframe>');
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('#Trainer').click(function () {
+                if (!$('#iframe').length) {
+                    $('#iframeHolder').html('<iframe id="iframe2" src="EmploymentApplication.html" width="100%" height="1400px"></iframe>');
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('#Subscription').click(function () {
+                if (!$('#iframe').length) {
+                    $('#iframeHolder').html('<iframe id="iframe2" src="Subscription.html" width="100%" height="1400px"></iframe>');
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('#SignUp').click(function () {
+                if (!$('#iframe').length) {
+                    $('#iframeHolder').html('<iframe id="iframe2" src="SignUp.html" width="100%" height="1400px"></iframe>');
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('#Corporate').click(function () {
+                if (!$('#iframe').length) {
+                    $('#iframeHolder').html('<iframe id="iframe2" src="CompanyRegistration.html" width="100%" height="1400px"></iframe>');
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+        $(function () {
+            $('#College').click(function () {
+                if (!$('#iframe').length) {
+                    $('#iframeHolder').html('<iframe id="iframe2" src="CollegeRegistration.html" width="100%" height="1400px"></iframe>');
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('#Institute').click(function () {
+                if (!$('#iframe').length) {
+                    $('#iframeHolder').html('<iframe id="iframe2" src="InstituteRegistration.html" width="100%" height="1400px"></iframe>');
+                }
+            });
+        });
+    </script>
+    <script language="JavaScript">
+        /**
+          * Disable right-click of mouse, F12 key, and save key combinations on page
+          * By Arthur Gareginyan (https://www.arthurgareginyan.com)
+          * For full source code, visit https://mycyberuniverse.com
+          */
+        window.onload = function () {
+            document.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function (e) {
+                //document.onkeydown = function(e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e);
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e);
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e);
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e);
+                }
+                // "F12" key
+                if (event.keyCode == 123) {
+                    disabledEvent(e);
+                }
+            }, false);
+            function disabledEvent(e) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
+            }
+        };
+    </script>
+    <script type="text/jscript">
+        function disableContextMenu() {
+            window.frames["iframeHolder"].document.oncontextmenu = function () { alert("No way!"); return false; };
+            // Or use this
+            // document.getElementById("fraDisabled").contentWindow.document.oncontextmenu = function(){alert("No way!"); return false;};;
+        }</script>
+
+</head>
+
+<body>
+    <!--<div class="w3-container">-->
+
+
+    <div class="topnav" id="myTopnav">
+
+
+        <a href="#" class="ACTIVE" id="HomeMenu"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="#"  id="Trainee">Trainee(Student)</a>
+        <a href="#" id="Corporate">Corporate(Company)</a>
+        <a href="#" id="College">College(School)</a>
+        <a href="#" id="Institute">Consultancy(Institute)</a>
+        <a href="#"  id="Trainer">Trainer(Tutor)</a>
+        <a href="#"  id="Subscription">Subscription</a>
+        <a href="#"  id="SignUp">SignUp(For Updates)</a>
+        <i class="fa fa-bars"></i>
+      
+    </div>
+
+
+   
+
+            <!--<a href="TraineeReg.html" class="w3-bar-item w3-button " id="Trainee" target="Factiframe1">Trainee</a>
+    <a href="#" onclick="setIframe(this,'TraineeReg.html')" class="w3-bar-item w3-button" >-->
+            <!--Set the Iframe up--><!--</a>-->
+          
+
+       
+        <div id="iframeHolder" onload="disableContextMenu();" onMyLoad="disableContextMenu()"></div>
+
+        <!--<div id="Home" ></div>-->
+        <!--<div id="iframeHolder"><iframe src="TraineeReg.html" name="iframe1" height="1400px" width="100%"></iframe></div>-->
+
+
+
+</body>
+
+
+</html >
